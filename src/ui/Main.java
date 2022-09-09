@@ -1,7 +1,15 @@
+package ui;
+
+import model.BoardGame;
+import model.ScoreBoard;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        BoardGame boardGame = new BoardGame();
+        ScoreBoard scoreBoard = new ScoreBoard();
 
         Scanner sc = new Scanner(System.in);
         int menu = sc.nextInt();
@@ -16,9 +24,16 @@ public class Main {
                                 "3. Salir");
 
             switch (menu){
-                case 1://StartGame
+                case 1://StartGame: crear tablero, crear jugador
+                    System.out.println("Buenas jugador, antes de empezar tenemos que dejar algo en claro, ¿Cual es su nombre?");
+                    String name = sc.nextLine();
+
                     break;
-                case 2://ScoreBoard
+                case 2://model.ScoreBoard
+
+                    System.out.println("Haz escogido ver puntajes");
+                    scoreBoard.listPoints();
+
                     break;
                 case 3://Exit
                     System.out.println("Nos vemos pronto querido jugador");

@@ -1,3 +1,5 @@
+package model;
+
 public class Gamer {
     private String nickname;
     private int points;

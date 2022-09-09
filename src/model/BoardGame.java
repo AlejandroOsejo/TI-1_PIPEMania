@@ -1,3 +1,5 @@
+package model;
+
 public class BoardGame {
     private Casilla fuente;
     private Casilla drenaje;

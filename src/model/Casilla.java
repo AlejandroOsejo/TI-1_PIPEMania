@@ -1,3 +1,5 @@
+package model;
+
 public class Casilla {
     private Casilla next;
     private TipoTuberia tipo;

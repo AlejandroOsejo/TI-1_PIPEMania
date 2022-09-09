@@ -1,3 +1,5 @@
+package model;
+
 public class TipoTuberia {
     private int circular;
     private int vertical;

@@ -1,3 +1,7 @@
+package model;
+
+import model.Gamer;
+
 public class ScoreBoard {
     private Gamer points;//
     private Gamer player;
@@ -25,5 +29,18 @@ public class ScoreBoard {
             }
         }
 
+    }
+
+
+    public void listPoints(){
+        listPoints(points);
+    }
+    private void listPoints(Gamer current){
+        if (current == null){
+            return;
+        }
+        listPoints(current.getLeft());
+        System.out.println(current.getPoints());
+        listPoints(current.getRight());
     }
 }

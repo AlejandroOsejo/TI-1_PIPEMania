@@ -25,6 +25,7 @@ public class Main {
 
             switch (menu){
                 case 1://StartGame: crear tablero, crear jugador
+                    System.out.println("Haz escogido empezar el juego.");
                     System.out.println("Buenas jugador, antes de empezar tenemos que dejar algo en claro, ¿Cual es su nombre?");
                     String name = sc.nextLine();
 

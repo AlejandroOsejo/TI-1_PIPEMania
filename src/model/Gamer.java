@@ -7,6 +7,11 @@ public class Gamer {
     private Gamer right;
     private Gamer left;
 
+    public Gamer(String nickname, int points) {
+        this.nickname = nickname;
+        this.points = points;
+    }
+
     public String getNickname() {return nickname;}
     public void setNickname(String nickname) {this.nickname = nickname;}
 

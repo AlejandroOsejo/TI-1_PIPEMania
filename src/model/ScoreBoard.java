@@ -3,8 +3,18 @@ package model;
 import model.Gamer;
 
 public class ScoreBoard {
-    private Gamer points;//
-    private Gamer player;
+    private Gamer points;
+    private int position = 0;
+
+    public ScoreBoard(){
+
+    }
+
+    public Gamer getPoints() {return points;}
+    public void setPoints(Gamer points) {this.points = points;}
+
+    public int getPosition() {return position;}
+    public void setPosition(int position) {this.position = position;}
 
 
     public void addPoint(Gamer p){
@@ -21,7 +31,7 @@ public class ScoreBoard {
             }else{
                 current.setLeft(p);
             }
-        }else if (p.getPoints() > current.getPoints()){
+        }else if (p.getPoints() > current.getPoints()){ //Derecha
             if (current.getRight() != null){
                 addPoint(p, current.getRight());
             }else {
@@ -40,7 +50,7 @@ public class ScoreBoard {
             return;
         }
         listPoints(current.getLeft());
-        System.out.println(current.getPoints());
+        System.out.println((position++) + " - " + current.getNickname() + " / " + current.getPoints());
         listPoints(current.getRight());
     }
 }

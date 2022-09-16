@@ -3,17 +3,12 @@ package model;
 public class BoardGame {
     private Casilla head;
     private Casilla tail;
-    private String[][] board; //tablero con matriz o con lista multiple enlazada
+    private String[][] board; //tablero con matriz
 
-    public void generateBoard(){ //generar el board --> lista enlazada multiple
-        for (int i=0; i<8; i++){
+    public void generateBoard(){ //generar el board
+        board = new String[8][8];
 
-
-            for (int u=8; i>0; i--){
-
-            }
-        }
-
+        
 
     }
 

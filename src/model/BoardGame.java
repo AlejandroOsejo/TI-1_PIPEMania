@@ -8,7 +8,7 @@ public class BoardGame {
     public void generateBoard(){ //generar el board
         board = new String[8][8];
 
-        
+
 
     }
 

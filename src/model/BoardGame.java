@@ -23,7 +23,7 @@ public class BoardGame {
         board[random.nextInt(8)][random.nextInt(8)]="D";
 
 
-        
+
 
     }
 

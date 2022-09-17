@@ -28,6 +28,7 @@ public class Main {
                     System.out.println("Haz escogido empezar el juego.");
                     System.out.println("Buenas jugador, antes de empezar tenemos que dejar algo en claro, ¿Cual es su nombre?");
                     String name = sc.nextLine();
+                    System.out.println("Hola!" +name + " vamos a empezar el juego");
 
                     break;
                 case 2://model.ScoreBoard
